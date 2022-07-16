@@ -1,3 +1,4 @@
+#step 1
 #onem2m 리소스 생성하기 (cin)
 
 import requests
