@@ -1,3 +1,4 @@
+#step 2
 #importing the library of RPi.GPIO
 #importing the library of time
 import RPi.GPIO as GPIO
