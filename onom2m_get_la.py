@@ -1,4 +1,4 @@
-#onem2m 가장 최신 리소스 가져오기 (get la)
+#onem2m 가장 최신 리소스 가져오기(get la)
 
 import requests
 
