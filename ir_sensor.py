@@ -1,8 +1,11 @@
-import RPi.GPIO as GPIO
 #importing the library of RPi.GPIO
-import time
 #importing the library of time
+import RPi.GPIO as GPIO
+import time
+
 sensor = 16
+#시작과 동시에 Object detected를 하므로 default 값을 -1로 선언
+count =-1
 #declaring BCM pin 16 which is GPIO 23 of Raspberry Pi
 GPIO.setmode(GPIO.BOARD)
 #declaring the BCM mode of pins
@@ -13,7 +16,8 @@ try:
         #initiated a infinite while loop
         if GPIO.input(sensor):
         #checking input on sensor
-            print("Object detected")
+            count+=1
+            print("count : {}, Object detected".format(count))
             while GPIO.input(sensor):
             #checking input on sensor again
               time.sleep(0.01)
