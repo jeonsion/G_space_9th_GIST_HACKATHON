@@ -1,3 +1,4 @@
+#final
 #모터가 구동되는 상태에서 IR이 Phone/count 값 만큼 약을 카운트했을 때 서버에 0을 올리는 코드
 #서버에 0을 올림으로 써 추후게 모터를 중지시킬 
 #importing the library of RPi.GPIO
