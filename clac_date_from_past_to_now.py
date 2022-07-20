@@ -1,7 +1,7 @@
 import requests
 import datetime as dt
 import datetime
-
+#필터를 적용하여 resource 가져오기 la값을 수정하면 컨테이너에 해당하는 cin의 개수만큼 가져올 수 있음 아래처럼 la=250이면 249개의 데이터를 가져온다.
 url = "http://203.253.128.177:7579/Mobius/phone/data?fu=2&la=250ty=4&rcn=4"
 
 payload={}
