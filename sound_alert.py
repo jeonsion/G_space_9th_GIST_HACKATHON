@@ -1,7 +1,10 @@
 import pygame
+
  
-#init
-pygame.mixer.init()
+pygame.mixer.init(16000)
+#pygame.mixer.pre_init(44100,-16,2,512)
+
+
  
 #load file
 pygame.mixer.music.load("/home/pi/G_space_mini/alarm.mp3")
@@ -16,9 +19,6 @@ while pygame.mixer.music.get_busy() == True:
     
 pygame.mixer.music.load("/home/pi/G_space_mini/alarm.mp3")
 pygame.mixer.music.play()
-
-
-
 
 
 
